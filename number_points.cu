@@ -164,7 +164,7 @@ __global__ void number_points(struct Point *data, double *epsilonSqr, unsigned i
     return;
 }
 
-void generateData(struct Point *data)
+void generatePoints(struct Point *data)
 {
     srand(time(0));
 
