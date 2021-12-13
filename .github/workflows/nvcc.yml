@@ -1,0 +1,21 @@
+# This workflow will build a C project with GCC
+
+name: NVCC CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up NVCC
+        uses: Jimver/cuda-toolkit@v0.2.5
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: Build with NVCC
+        run: make
