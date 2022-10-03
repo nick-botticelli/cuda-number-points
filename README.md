@@ -14,6 +14,6 @@ information.
 2. Run the program with the command `./number_points`. You must
 have a CUDA-compatible NVIDIA GPU for this program to run.
 
-# License
+## License
 
 The MIT License (MIT)
